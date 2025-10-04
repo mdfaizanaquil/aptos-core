@@ -389,6 +389,7 @@ impl PartialVMError {
         )
     }
 
+    #[cold]
     pub fn finish(self, location: Location) -> VMError {
         let PartialVMError_ {
             major_status,
@@ -429,6 +430,7 @@ impl PartialVMError {
         }))
     }
 
+    #[cold]
     pub fn new(major_status: StatusCode) -> Self {
         debug_assert!(major_status != StatusCode::EXECUTED);
         let message = if major_status == StatusCode::UNKNOWN_INVARIANT_VIOLATION_ERROR
@@ -493,6 +495,7 @@ impl PartialVMError {
         self
     }
 
+    #[cold]
     pub fn with_message(mut self, message: impl ToString) -> Self {
         let mut message = message.to_string();
         if self.0.major_status == StatusCode::UNKNOWN_INVARIANT_VIOLATION_ERROR {

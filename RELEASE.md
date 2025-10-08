@@ -45,7 +45,7 @@ The aptos cli release tags are created to track the CLI versions for community t
 * [day 14] Once confirmed that both binary upgrade and framework upgrade stabilized on testnet, a release tag `aptos-node-vx.y.z` will be created, the release version will be deployed to 1% of the stake on **Mainnet**.
 * [day 16] Wider announcement will be made for the community to upgrade the binary, `aptos-node-vx.y.z` will be updated with "[Mainnet]" in the release page, Mainnet validators will be slowly upgrading.
 * [day 17] A list of framework upgrade proposals will be submitted to Mainnet for voting.
-* [day 24] Proposals executed on-chain if passed voting.
+* [day 24] **Proposals are executed** on-chain if **they pass** voting.
 
 ## Release Announcement
 * Each of the network release will be announced on Aptos Network [Discord](https://discord.gg/aptosnetwork). Follow mainnet-release, testnet-release, devnet-release channel to get updates.
